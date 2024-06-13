@@ -49,3 +49,31 @@ const quizQuestions = [{
         answer: 1
     },
 ];
+
+function startGame() {
+
+}
+
+function restartGame() {
+
+}
+
+function displayScore() {
+
+}
+
+function showQuestion() {
+
+}
+
+function showChoices() {
+
+}
+
+function checkAnswer() {
+
+}
+
+function finishQuiz() {
+
+}
