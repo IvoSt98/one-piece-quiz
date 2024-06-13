@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
     <!-- Conecting style.css with index.html-->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>One Piece Quiz</title>
@@ -21,9 +26,9 @@
     <main>
 
         <!-- Instruction section-->
-        <section>
+        <section id="instructionsArea">
             <h2>How to Play the One Piece Anime Quiz</h2>
-            <div>
+            <div class="quizInfo">
                 <h3>
                     Welcome to the One Piece Anime Quiz! Follow these simple instructions to test your knowledge about
                     the adventures of Monkey D. Luffy and his crew.</h3>
@@ -38,15 +43,21 @@
                     At the end of the quiz, your total score will reveal whether you can truly call yourself a One Piece
                     fan or not.
                 </p>
-                <button>Play Now</button>
+                <button class="playButton">Play Now</button>
             </div>
         </section>
 
         <!-- Questions section -->
-        <section hidden>
-            <h3>Questions</h3>
-            <div></div>
-            <button>Next</button>
+        <section id="questionBox" style="display: none;">
+            <h3>Quiz questions:</h3>
+            <div id="qestionContainer"></div>
+            <div id="answersContainer">
+                <button id="answer0" onclick="submitAnswer(0);"></button>
+                <button id="answer1" onclick="submitAnswer(1);"></button>
+                <button id="answer2" onclick="submitAnswer(2);"></button>
+                <button id="answer3" onclick="submitAnswer(3);"></button>
+            </div>
+            <button class="nextQuestion">Next</button>
         </section>
     </main>
 
@@ -55,11 +66,11 @@
 
         <!-- Restart button and score information -->
         <div>
-            <button>Restart</button>
+            <button id="restartButton">Restart</button>
         </div>
-        <div>
-            <p>Correct Answers <span id="score">0</span></p>
-            <p>Incorrect Answers <span id="incorrect">0</span></p>
+        <div class="scoreArea">
+            <p class="scores">Correct Answers <span id="correct">0</span></p>
+            <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
         </div>
     </footer>
 
