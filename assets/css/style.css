@@ -1,0 +1,9 @@
+body {
+    background-image: url("../images/hero-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    padding: 50px 10% 10%;
+    background-position: center center;
+    background-attachment: fixed;
+}
