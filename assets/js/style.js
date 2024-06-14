@@ -50,6 +50,8 @@ const quizQuestions = [{
     },
 ];
 
+
+
 function startGame() {
 
 }
@@ -71,6 +73,10 @@ function showChoices() {
 }
 
 function checkAnswer() {
+
+}
+
+function nextQuestion() {
 
 }
 
