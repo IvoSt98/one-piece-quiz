@@ -45,19 +45,17 @@
                     <br>
                     And don't forget! You can always press the Restart and to start again!
                 </p>
-                <button id="playButton"  onclick="startGame('questionBox');">Play Now</button>
-            </div>
+                <button id="playButton" >Play Now</button>
         </section>
 
         <!-- Questions section -->
         <section id="questionBox" style="display: none;">
             <h3>Quiz questions:</h3>
-            <div id="qestionContainer"></div>
+            <div id="question"></div>
             <div id="answersContainer">
-                <button id="answer0" onclick="submitAnswer(0);"></button>
-                <button id="answer1" onclick="submitAnswer(1);"></button>
-                <button id="answer2" onclick="submitAnswer(2);"></button>
-                <button id="answer3" onclick="submitAnswer(3);"></button>
+            </div>
+            <div>
+                <button style="display: none;">Next</button>
             </div>
         </section>
     </main>

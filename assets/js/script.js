@@ -54,27 +54,37 @@ const quizQuestions = [{
 let instructionsArea = document.getElementById('instructionsArea');
 let playButton = document.getElementById('playButton');
 let questionBox = document.getElementById('questionBox');
-let qestionContainer = document.getElementById('qestionContainer');
+let questionElement = document.getElementById('question');
 let answersContainer = document.getElementById('answersContainer');
-let optionsElements = [
-    document.getElementById("answer0"),
-    document.getElementById("answer1"),
-    document.getElementById("answer2"),
-    document.getElementById("answer3")
-];
 let restartButton = document.getElementById('restartButton');
-let correct = document.getElementById('correct');
-let incorrect = document.getElementById('incorrect');
+let correctDisplay = document.getElementById('correct');
+let incorrectDisplay = document.getElementById('incorrect');
 
-    //** Replacing the two sections when the Play button is clicked */
+// Event listeners for buttons
+playButton.addEventListener('click', startGame);
+
+// Quiz state variables
+let currentQuestionIndex = 0;
+let score = 0;
+let correctAnswers = 0;
+let incorrectAnswers = 0;
+
+// Start the quiz when Play Now button is clicked
 function startGame() {
-    document.getElementById("instructionsArea").style.display="none";
-    document.getElementById("questionBox").style.display="block";
+    instructionsArea.style.display = "none";
+    questionBox.style.display = "block";
+    correctAnswers = 0;
+    incorrectAnswers = 0;
+    score = 0;
+    correctDisplay.innerText = correctAnswers;
+    incorrectDisplay.innerText = incorrectAnswers;
+    showQuestionAndChoices();
+    
 }
 
 
 function restartGame() {
-
+    
 }
 
 
@@ -83,13 +93,12 @@ function displayScore() {
 }
 
 
-function showQuestion() {
 
+function showQuestionAndChoices() {
+   
 }
 
-function showChoices() {
 
-}
 
 function checkAnswer() {
 
