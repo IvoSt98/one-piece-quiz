@@ -66,8 +66,10 @@ let restartButton = document.getElementById('restartButton');
 let correct = document.getElementById('correct');
 let incorrect = document.getElementById('incorrect');
 
+    
 function startGame() {
-
+    document.getElementById("instructionsArea").style.display="none";
+    document.getElementById("questionBox").style.display="block";
 }
 
 
