@@ -66,7 +66,7 @@ let restartButton = document.getElementById('restartButton');
 let correct = document.getElementById('correct');
 let incorrect = document.getElementById('incorrect');
 
-    
+    //** Replacing the two sections when the Play button is clicked */
 function startGame() {
     document.getElementById("instructionsArea").style.display="none";
     document.getElementById("questionBox").style.display="block";
