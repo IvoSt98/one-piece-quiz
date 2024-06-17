@@ -92,10 +92,31 @@ function displayScore() {
 
 }
 
-
-
+// Display current question and answer choices
 function showQuestionAndChoices() {
-   
+    // Clear previous answer choices
+    resetState();
+    // Get current question object
+    let currentQuestion = quizQuestions[currentQuestionIndex];
+    // Display question text
+    questionElement.innerText = currentQuestion.question;
+    // Create buttons for each choice
+    currentQuestion.choices.forEach(choice => {
+        let button = document.createElement('button');
+        button.innerText = choice;
+        button.classList.add('btn');
+        // Attach click event listener to check answer
+        button.addEventListener('click', () => checkAnswer(choice));
+        // Append button to answers container
+        answersContainer.appendChild(button);
+    });
+}
+
+// Clear answer choices from answers container
+function resetState() {
+    while (answersContainer.firstChild) {
+        answersContainer.removeChild(answersContainer.firstChild);
+    }
 }
 
 
