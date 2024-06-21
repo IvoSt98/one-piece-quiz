@@ -22,8 +22,32 @@ h3 {
     opacity: 0.8;
 }
 
+#questionBox {
+    font-size: 120%;
+    border-radius: 15px;
+    background-color: #010203;
+    opacity: 0.8;
+}
+#endGameScore{
+    font-size: 120%;
+    border-radius: 15px;
+    background-color: #010203;
+    opacity: 0.8;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#restartButton {
+    margin-bottom: 30px;
+}
 
 button {
+    margin-top: 30px;
+    margin-right: 10px;
     border-radius: 15px;
     font-size: 25px;
     padding: 5px 20px;
@@ -31,7 +55,7 @@ button {
 
 .scores {
     display: inline-block;
-    padding: 25px;
+    padding: 10px;
 }
 
 /* Body */

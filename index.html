@@ -26,7 +26,7 @@
     <main>
 
         <!-- Instruction section-->
-        <section id="instructionsArea" style="display: visible;">
+        <section id="instructionsArea">
             <h2>How to Play the One Piece Anime Quiz</h2>
             <div class="quizInfo">
                 <h3>
@@ -45,7 +45,7 @@
                     <br>
                     And don't forget! You can always press the Restart and to start again!
                 </p>
-                <button id="playButton" >Play Now</button>
+                <button id="playButton">Play Now</button>
         </section>
 
         <!-- Questions section -->
@@ -54,9 +54,17 @@
             <div id="question"></div>
             <div id="answersContainer">
             </div>
-            <div>
-                <button style="display: none;">Next</button>
+
+            <!-- The code below was taken from Love Maths project-->
+            <div class="scoreArea">
+                <p class="scores">Correct Answers: <span id="correct">0</span></p>
+                <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
             </div>
+        </section>
+
+        <!-- New section with div to show the result in end of the quiz-->
+        <section>
+            <div id="endGameScore"></div>
         </section>
     </main>
 
@@ -66,12 +74,6 @@
         <!-- Restart button and score information -->
         <div>
             <button id="restartButton">Restart</button>
-        </div>
-
-        <!-- The code below was taken from Love Maths project-->
-        <div class="scoreArea">
-            <p class="scores">Correct Answers: <span id="correct">0</span></p>
-            <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
         </div>
     </footer>
 
